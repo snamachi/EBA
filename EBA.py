@@ -97,5 +97,5 @@ def scale(n):
 	return 2^n
 def cool(cost):
 	return cost		
-choice=EBA(aspectscape,cool,scale,32)
+choice=EBA(aspectscape,scale,cool,32)
 print(choice)
