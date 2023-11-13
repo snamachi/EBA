@@ -4,9 +4,8 @@ import random
 #Given number of aspects and items 
 #Uniformly draws an aspect landscape
 def generate(a_n,i_n):
-	aspectscape=[]
-	
 	#Each item has at least one aspect
+	aspectscape=[]
 	for k in range(i_n):
 		u=random.random()
 		a_r=math.floor(u*a_n)
@@ -35,7 +34,8 @@ def aspectlst(aspectscape):
 	for item in aspectscape:
 		for aspect in item:
 			if aspect not in aspects:
-				aspects.append(aspect)
+				if all(aspect in alt for alt in aspectscape):
+					aspects.append(aspect)
 	return aspects
 
 #Given aspects, scale, and info cost
