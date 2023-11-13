@@ -28,7 +28,7 @@ def generate(a_n,i_n):
 	return aspectscape
 	
 #Given an aspect landscape
-#Returns its aspects
+#Returns its discriminating aspects
 def aspectlst(aspectscape):
 	aspects=[]
 	for item in aspectscape:
