@@ -94,7 +94,7 @@ def EBA(aspectscape,scale,cool,cost):
 aspectscape=generate(5,3)
 print(aspectscape)
 def scale(n):
-	return 2^n
+	return 2**n
 def cool(cost):
 	return cost		
 choice=EBA(aspectscape,scale,cool,32)
