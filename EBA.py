@@ -34,7 +34,7 @@ def aspectlst(aspectscape):
 	for item in aspectscape:
 		for aspect in item:
 			if aspect not in aspects:
-				if all(aspect in alt for alt in aspectscape):
+				if not all(aspect in alt for alt in aspectscape):
 					aspects.append(aspect)
 	return aspects
 
